@@ -92,13 +92,14 @@ img {
   color:var(--navy-blye-color);
   padding-top: 24px;
   padding-bottom: 24px;
+  transition : color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .pages::after{
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   height: 4px;
   /* background-color: #404BBF; */
@@ -109,6 +110,7 @@ img {
 
 .pages.current{
   color: var(--ocean-color);
+  
 }
 
 .pages.current::after,

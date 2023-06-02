@@ -114,11 +114,13 @@ img {
 .pages.current::after,
 .pages:hover::after,
 .pages:focus::after{
+  transition : color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--ocean-color);
 }
 
 .pages:hover, .pages:focus,
 .contact-list:hover, .contact-list:focus{
+  transition : color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color:  var(--ocean-color);
 }
 
@@ -184,6 +186,7 @@ img {
   margin-right: auto;
 }
 .button-one:hover, .button-one:focus{
+  transition : color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--ocean-color) 
 }
 
@@ -371,6 +374,7 @@ border-radius: 50%;
 .socials-link:hover,
 .socials-link:focus
 {
+  transition : color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 background-color: var(--ocean-color);
 }
 
@@ -412,6 +416,7 @@ background-color: var(--ocean-color);
 
 .customers-link:hover,
 .customers-link:focus{
+  transition : color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #404BBF;
   color: #404BBF;
 }
@@ -446,6 +451,7 @@ line-height: 24px;
 }
 .footer-socials-link:hover,
 .footer-socials-link:focus{
+  transition : color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #31D0AA;
 }
 
@@ -519,6 +525,7 @@ margin-bottom: 16px;
   border-radius: 4px;
 }
 .btn:hover, .btn:focus{
+  transition : color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--white-color);
   background-color: var(--ocean-color) ;
   border: 1px solid transparent;
@@ -543,6 +550,7 @@ margin-bottom: 16px;
 
 .catalog-link:hover,
 .catalog-link:focus{
+  transition : color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 

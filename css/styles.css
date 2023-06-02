@@ -576,3 +576,13 @@ img {
   position: relative;
   overflow: hidden;
 }
+
+.catalog-link:hover .text-animations
+{
+ transform:translateY(0%);
+}
+
+.catalog-link:focus .text-animations
+{
+ transform:translateY(0%);
+}

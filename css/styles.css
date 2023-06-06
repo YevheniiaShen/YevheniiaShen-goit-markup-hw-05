@@ -98,7 +98,7 @@ img {
   height: 4px;
   border-radius: 2px;
   display: block;
-  background-color: var(--ocean-color); 
+  background-color: var(--ocean-color);
 }
 
 .pages.current {
@@ -186,61 +186,72 @@ img {
 }
 .button-one:hover,
 .button-one:focus {
-  
   background-color: var(--ocean-color);
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-window {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1); 
+  transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
-  background: var(--cloud-color); 
-  box-shadow:0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; 
+  background: var(--cloud-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-
-.modal-btn {
-  position: absolute; 
-  top:24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: flex; 
-  align-items: center;
-  justify-content: center; 
-  background-color: var(--cornflower-color); 
-  border: 1px solid rgba(0, 0, 0, 0.1); 
-  padding: 0; 
-  cursor: pointer; 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-box{
+.modal-box {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cornflower-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:focus{
+    background-color: var(--ocean-color);
+    border: none; 
+    fill: var(--white-color);
+}
+.modal-close-svg{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.modal-close-svg:hover,
+.modal-close-svg:focus{
+    fill: currentColor; 
+    fill: var(--white-color);
+}
+
 .section-two {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -427,7 +438,6 @@ img {
 
 .customers-link:hover,
 .customers-link:focus {
-
   border: 1px solid #404bbf;
   color: #404bbf;
 }
@@ -524,7 +534,10 @@ img {
   padding-right: 24px;
   border: 1px solid var(--cornflower-color);
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus {
@@ -550,7 +563,7 @@ img {
 }
 .catalog-link {
   display: block;
-  color:var(--ocean-color);
+  color: var(--ocean-color);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -572,10 +585,10 @@ img {
 
 .card-reverse {
   position: absolute;
-  line-height: 1.5; 
-  letter-spacing: 0.02em; 
-  color: #f4f4fd; 
-  padding: 40px 32px; 
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
   top: 0;
   left: 0;
   width: 100%;
@@ -594,12 +607,10 @@ img {
   overflow: hidden;
 }
 
-.catalog-link:hover .text-animations
-{
- transform: translateY(0%);
+.catalog-link:hover .text-animations {
+  transform: translateY(0%);
 }
 
-.catalog-link:focus .text-animations
-{
- transform:translateY(0%);
+.catalog-link:focus .text-animations {
+  transform: translateY(0%);
 }

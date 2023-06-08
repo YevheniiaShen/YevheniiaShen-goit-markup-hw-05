@@ -615,12 +615,12 @@ img {
 }
 
 
-.catalog-link:hover .text-animations
+.catalog-link:hover .card-reverse
  {
   transform:translateY(0%);
 }
 
-.catalog-link:focus .text-animations{
+.catalog-link:focus .card-reverse{
   transform: translateY(0%);
   
 }
